@@ -1,0 +1,45 @@
+---
+import Footer from '../components/Footer/Footer.astro';
+import Header from '../components/Header/Header.astro';
+import Gpa from '../components/gpa/Gpa';
+import Init from '../components/init/Init';
+
+import '../styles/index.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-1G56QQ70TN"></script>
+		<script src="/analytics.js" is:inline></script>
+		<meta name="title" content="حساب المعدل">
+		<meta name="description" content="في هذي الصفحة يمكنك حساب معدلك الفصلي و التراكمي , في حال كان هذا فصلك الأول الدراسي أكتب صفر في كلا الخانتين الساعات و النقاط">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://mrsm.app/gpa/">
+		<meta property="og:title" content="حساب المعدل">
+		<meta property="og:description" content="في هذي الصفحة يمكنك حساب معدلك الفصلي و التراكمي , في حال كان هذا فصلك الأول الدراسي أكتب صفر في كلا الخانتين الساعات و النقاط">
+		<meta property="og:image" content="/large-logo.png">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://mrsm.app/gpa/">
+		<meta property="twitter:title" content="حساب المعدل">
+		<meta property="twitter:description" content="في هذي الصفحة يمكنك حساب معدلك الفصلي و التراكمي , في حال كان هذا فصلك الأول الدراسي أكتب صفر في كلا الخانتين الساعات و النقاط">
+		<meta property="twitter:image" content="/large-logo.png">
+		<title>حساب المعدل</title>
+	</head>
+	<body>
+		<div class="homePage">
+			<Init client:only="react" />
+            <Gpa client:only="react" />
+			<Header />
+			<Footer />
+			<img src="/vector1.svg" alt="vector" class="vector1">
+			<img src="/vector2.svg" alt="vector" class="vector2">
+			<img src="/vector3.svg" alt="vector" class="vector3">
+		</div>
+	</body>
+</html>

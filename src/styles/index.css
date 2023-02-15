@@ -1,0 +1,52 @@
+@font-face{font-family:El Messiri;src:url("/fonts/ElMessiri-Regular.ttf");font-display:swap}
+@font-face{font-family:Comfortaa;src:url("/fonts/Comfortaa-Regular.ttf");font-display:swap}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.homePage{
+    overflow-x: hidden;
+}
+.ar{
+    font-family: El Messiri;
+}
+.en{
+    font-family:Comfortaa;
+}
+.hide{
+    opacity: 0;
+    display: none;
+}
+.vector1{
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.vector2{
+    top: -40%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.vector3{
+    top: 60%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.lastVector{
+    top: 165%;
+}
+@media only screen and (min-width: 600px){
+    .lastVector{
+        opacity: 0;
+        display: none;
+    }
+}

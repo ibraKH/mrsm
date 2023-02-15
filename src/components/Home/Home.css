@@ -1,0 +1,82 @@
+.home{
+    position: relative;
+    height: 2169px;
+    overflow: hidden;
+}
+.landing{
+    margin-top: 300px;
+    position: relative;
+    height: 473px;
+}
+.landingText{
+    margin-right: 300px;
+    position: relative;
+}
+.landingText::before{
+    content: "";
+    position: absolute;
+    width: 389px;
+    height: 412px;
+    top: -120px;
+    right: -240px;
+    background-image: url("/blob.svg");
+}
+.landingWelcome{
+    width: 156px;
+    height: 42px;
+    position: relative;
+    text-align: center;
+    box-shadow: inset 0px -15px 0px 0px white;
+}
+.landingText h1{
+    font-weight: normal;
+}
+.landingInfo{
+    width: 210px;
+    height: 42px;
+    position: relative;
+    text-align: center;
+    box-shadow: inset 0px -15px 0px 0px white;
+}
+.homeRowImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.homeRowText{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+.homeRow{
+    height: 346px;
+    margin-bottom: 100px;
+}
+.secondRow{
+    width: 100%;
+    background-color: #F8FEFF;
+}
+@media only screen and (max-width: 600px) {
+    .landingText{
+        margin-right: 125px;
+    }
+    .landingText::before{
+        width: 245px;
+        height: 240px;
+        margin-right: 120px;
+        margin-top: 50px;
+        background-image: url("/blob2.svg");
+    }
+}
+@media only screen and (max-width: 450px) {
+    .homeRowText{
+        width: 80%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .landingText{
+        margin-right: 90px;
+    }
+}

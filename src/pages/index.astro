@@ -1,0 +1,46 @@
+---
+import Footer from '../components/Footer/Footer.astro';
+import Header from '../components/Header/Header.astro';
+import Home from '../components/Home/Home.astro';
+import Init from '../components/init/Init';
+
+import '../styles/index.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-1G56QQ70TN"></script>
+		<script src="/analytics.js" is:inline></script>
+		<meta name="title" content="الصفحة الرئيسية">
+		<meta name="description" content="منصة مرسم منصة تعليمية ترفيهية مجانية , في مرسم يمكنك حساب معدلك التراكمي والفصلي عبر خانة حساب المعدل , قريبا صفحة التحديات التي تضمن أسئلة متنوعة من مجالات مختلفة">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://mrsm.app/">
+		<meta property="og:title" content="الصفحة الرئيسية">
+		<meta property="og:description" content="منصة مرسم منصة تعليمية ترفيهية مجانية , في مرسم يمكنك حساب معدلك التراكمي والفصلي عبر خانة حساب المعدل , قريبا صفحة التحديات التي تضمن أسئلة متنوعة من مجالات مختلفة">
+		<meta property="og:image" content="/large-logo.png">
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://mrsm.app/">
+		<meta property="twitter:title" content="الصفحة الرئيسية">
+		<meta property="twitter:description" content="منصة مرسم منصة تعليمية ترفيهية مجانية , في مرسم يمكنك حساب معدلك التراكمي والفصلي عبر خانة حساب المعدل , قريبا صفحة التحديات التي تضمن أسئلة متنوعة من مجالات مختلفة">
+		<meta property="twitter:image" content="/large-logo.png">
+		<title>الصفحة الرئيسية</title>
+	</head>
+	<body>
+		<div class="homePage">
+			<Init client:only="react" />
+			<Header />
+			<Home />
+			<Footer />
+			<img src="/vector1.svg" alt="vector" class="vector1">
+			<img src="/vector2.svg" alt="vector" class="vector2">
+			<img src="/vector3.svg" alt="vector" class="vector3">
+			<img src="/vector2.svg" alt="vector" class="vector2 lastVector">
+		</div>
+	</body>
+</html>

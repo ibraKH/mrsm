@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+.gpaInfo{
+    margin-top: 200px;
+    text-align: center;
+}
+.gpaInfo p{
+    width: 400px;
+    margin: auto;
+}
+.gpaCard{
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 318px;
+    width: 367px;
+    background-color: #edf8fa;
+    border-radius: 20px;
+}
+.gpaType{ 
+    margin-top: 25px;
+    margin: auto;
+    width: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.fourGpa{
+    font-family:Comfortaa;
+    position: relative;
+    margin-right: 40px;
+}
+.fiveGpa{
+    font-family:Comfortaa;
+    position: relative;
+}
+.gpaType input{
+    accent-color: #3B2E70;
+}
+.gpaTypeText{
+    padding-top: 5px;
+}
+.gpaTotalInputs{
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    width: 150px;
+}
+.subjectsContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.subjectCard{
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: 210px;
+    background-color: #3B2E70;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.subjectCard h2{
+    font-weight: normal;
+}
+.close{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+.newSubject{
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 100px;
+    background-color: white;
+    border: solid 4px #3B2E70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selectGrade{
+    width: 100px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+}
+.subjectGrade h3{
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.subjectHours h3{
+    font-weight: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.subjectHours input{
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+}
+.gpaSubmit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.gpaSubmit button{
+    cursor: pointer;
+    width: 150px;
+    color: white;
+    font-size: 18px;
+    height: 30px;
+    background-color: #3B2E70;
+    border: none;
+    border-radius: 20px;
+}
+.yourGrade{
+    text-align: center;
+}
+.yourGrade h3{
+    font-size: large;
+    margin: 0;
+    margin-top: 25px;
+}
+.yourGrade h4{
+    color: #3B2E70;
+}
+.gradeNumber{
+    margin: 0;
+    font-size: xx-large;
+    font-family: 'Changa', sans-serif;
+}
+.alerts{
+    text-align: center;
+    font-size: larger;
+    color: #DF5759;
+}
+.uncomplete{
+    border: 3px solid #DF5759;
+}
+.gpaInfoTitle{
+    color: #3B2E70;
+}
+@media only screen and (max-width: 1100px) and (min-width: 850px) {
+    .subjectsContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+@media only screen and (max-width: 850px) and (min-width: 650px) {
+    .subjectsContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+@media only screen and (max-width: 650px) and (min-width: 450px){
+    .subjectsContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .subjectsContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .gpaInfo p{
+        width: 80%;
+    }
+    .gpaCard{
+        width: 100%;
+        border-radius: 0;
+    }
+}

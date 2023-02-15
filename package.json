@@ -1,0 +1,21 @@
+{
+	"name": "y",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev --host 192.168.1.4 --port 3005",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/react": "^2.0.2",
+		"@types/react": "^18.0.28",
+		"@types/react-dom": "^18.0.10",
+		"aos": "^2.3.4",
+		"astro": "^2.0.10",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	}
+}

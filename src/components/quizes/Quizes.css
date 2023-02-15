@@ -1,0 +1,14 @@
+.quizContainer{
+    height: 445px;
+    text-align: center;
+    margin-top: 200px;
+    overflow-x: hidden;
+}
+.quizContainer h1{
+    font-weight: normal;
+}
+.quizContainer h2{
+    font-size: x-large;
+    text-align: center;
+    color: #FBBE3A;
+}
